@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Login</title>
+</head>
+<body>
+<center>
+<h1>Login to your Account</h1>
+<form method="POST" action="">
+{%csrf_token %}
+<table>
+
+<tr><td>Username</td>
+    <td><input type='text' name='usr'></td></tr>
+
+<tr><td>Password</td>
+    <td><input type='password' name='pwd'></td></tr>
+
+
+
+<tr><td></td>
+    <td><input type='submit' value='login'></td></tr>
+    <tr><td></td>
+ <tr><td>Click here to reset your password</td>
+    <td><a href='/reset/'>Reset</a> </td></tr>
+
+</table>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>WELCOME Again</title>
+</head>
+<body>
+<h1>My Blogs...</h1>
+{% if blogs %}
+<ul>
+{% for blog in blogs %}
+<li>
+<u>TITLE : {{ blog.title }}</u><br>
+<a href="blogid={{blog.pk}}">Edit Post</a>
+<br><br>
+CONTENT : {{ blog.blogpost }}</li>
+    <br><br>
+{% endfor %}
+</ul>
+{% else %}
+<p>You haven't posted anything yet.</p>
+<p>Start your blogs Now.</p>
+{% endif %}
+
+
+</body>
+</html>
+
+

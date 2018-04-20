@@ -1,0 +1,65 @@
+<html>
+       <head>
+             <title>Register</title>
+       </head>
+
+
+           <body>
+             <form method ='POST' action="">
+
+
+            {%csrf_token %}
+
+              <table>
+
+                <tr><th>Registration</th></tr>
+                 <tr>
+                      <td>Username:<td>
+                      <td><input type ="text" name ="usr"></td>
+
+                </tr>
+                <tr>
+                      <td>Password:<td>
+                      <td><input type ="password" name ="pwd"></td>
+
+                </tr>
+                <tr>
+                      <td>Name:<td>
+                      <td><input type ="text" name ="name"></td>
+
+                </tr>
+                <tr>
+                      <td>Email:<td>
+                      <td><input type ="text" name ="mail"></td>
+
+                </tr>
+                <tr>
+                      <td>Mobile:<td>
+                      <td><input type ="text" name ="mob"></td>
+
+                </tr>
+                <tr>
+                      <td>Questions:<td>
+                    <td><select name="question">
+                      <option value="q1">Who is your first classteacher?</option>
+                      <option value="q2">What is your pet's name?</option>
+                      <option value="q3">Who is your role model? </option>
+                     </select></td>
+
+                </tr>
+                  <tr>
+                      <td>Answer:<td>
+                      <td><input type ="text" name ="answer"></td>
+
+                </tr>
+                  <tr>
+
+                      <td></td><td></td><td><input type='submit' value='Submit'></td></tr>
+
+
+                </table>
+                </form>
+
+                 </body>
+                   </html>
+

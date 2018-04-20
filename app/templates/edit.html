@@ -1,0 +1,15 @@
+html><head>
+<title>EDIT BLOG </title>
+</head><body>
+<h1>EDIT BLOG </h1>
+<form action="/editblog/" method="POST">
+{% csrf_token %}
+{%for i in blogs%}<input type="hidden" name="hid" value="{{i.id}}">
+Title: <input type="text" name="title" value="{{i.title}}"/><br/>
+Content: <br/>
+<textarea cols="35" rows="8" name="content">{{i.blogpost}}
+</textarea><br/>
+{% endfor %}
+<input type="submit" value="UPDATE"/>
+</form>
+</body></html>
